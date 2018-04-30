@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="NewsItemsTable">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="NewsItemRow" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="NewsItemRow">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="S. No." type="xs:string"/>
+                <xs:element name="Rule Category" type="xs:string"/>
+                <xs:element name="Rule Sub Category" type="xs:string"/>
+                <xs:element name="Folder" type="xs:string"/>
+  		<xs:element name="Mapping/Workflow Name" type="xs:string"/>
+                <xs:element name="Transformation/Widget" type="xs:string"/>
+                <xs:element name="Rule Alert Description" type="xs:string"/>
+                <xs:element name="Alert Message" type="xs:string"/>
+		<xs:element name="Run Date" type="xs:dateTime"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
